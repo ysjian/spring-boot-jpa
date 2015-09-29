@@ -19,16 +19,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "users/{username}",
-                    method = RequestMethod.GET)
-    public ResponseEntity get(@PathVariable String username) throws UnAuthorizedException, SQLException {
-        User user = userService.getByUserName(username);
-        if (null == user) {
-            return ResponseEntity.notFound().build();
-        }
-        return  ResponseEntity.ok(user);
-    }
-
     @RequestMapping(value = "users",
                     method = RequestMethod.GET)
     public List<User> getAll() throws IOException, SQLException {
@@ -45,8 +35,7 @@ public class UserController {
     @RequestMapping(value = "users",
                     method = RequestMethod.POST)
     public ResponseEntity<?> add(@RequestBody User user) throws SQLException, UnAuthorizedException {
-        if (StringUtils.isEmpty(user.getName())
-                || StringUtils.isEmpty(user.getSex())) {
+        if (StringUtils.isEmpty(user.getName()) || StringUtils.isEmpty(user.getSex())) {
             throw UnAuthorizedException.newInstance();
         }
         userService.add(user);

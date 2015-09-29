@@ -14,9 +14,9 @@ import java.util.Arrays;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
 public class UserControllerTest extends BasicMockMvcTest {
@@ -30,15 +30,6 @@ public class UserControllerTest extends BasicMockMvcTest {
     @Override
     public Object injectController() {
         return userController;
-    }
-
-    @Test
-    public void testGet() throws Exception {
-        User user = new User("Shenjian");
-        when(userService.getByUserName(anyString())).thenReturn(user);
-        mockGet("/users/1", MediaType.APPLICATION_JSON).andExpect(status().isOk())
-                .andExpect(content().contentType("application/json;charset=UTF-8"))
-                .andExpect(jsonPath("$.name", is("Shenjian")));
     }
 
     @Test

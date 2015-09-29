@@ -11,8 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.yood.springboot.mybatis.entity.User;
-import org.yood.springboot.mybatis.mapper.AuthorityMapper;
-import org.yood.springboot.mybatis.mapper.UserMapper;
+import org.yood.springboot.mybatis.repository.AuthorityRepository;
+import org.yood.springboot.mybatis.repository.UserRepository;
 import org.yood.springboot.mybatis.service.UserService;
 
 import java.sql.SQLException;
@@ -27,26 +27,25 @@ public class UserServiceImpl implements UserService {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
-    private UserMapper userMapper;
+    private UserRepository userRepository;
 
     @Autowired
-    private AuthorityMapper authorityMapper;
+    private AuthorityRepository authorityRepository;
 
     @Override
     public void add(User user) throws SQLException {
         user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
-        userMapper.insert(user);
+        userRepository.save(user);
     }
 
     @Override
     public void update(User user) throws SQLException {
-        userMapper.update(user);
     }
 
 
     @Override
     public List<User> getAll() throws SQLException {
-        return userMapper.selectAll();
+        return null;
     }
 
     @Override
@@ -56,16 +55,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getByUserName(String username) throws SQLException {
-        return userMapper.selectByName(username);
-    }
-
-    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         LOGGER.info("username = {}", username);
         try {
-            User user = userMapper.selectByName(username);
-            List<GrantedAuthority> roles = authorityMapper.selectByUserName(username)
+            User user = userRepository.findByName(username);
+            List<GrantedAuthority> roles = authorityRepository.findByUserName(username)
                     .stream()
                     .map(authority -> new SimpleGrantedAuthority(authority.getRole().name()))
                     .collect(Collectors.toList());
