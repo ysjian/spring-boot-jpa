@@ -43,8 +43,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-jdbc'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile 'org.springframework.boot:spring-boot-configuration-processor'
-    compile 'org.mybatis:mybatis:3.2.4'
-    compile 'org.mybatis:mybatis-spring:1.2.2'
+    compile 'org.jpa:jpa:3.2.4'
+    compile 'org.jpa:jpa-spring:1.2.2'
     compile 'org.apache.tomcat:tomcat-jdbc:7.0.50'
     compile 'mysql:mysql-connector-java:5.1.35'
 

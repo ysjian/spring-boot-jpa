@@ -2,23 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f8b5058-e938-4e78-af91-124973f714bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/AuthorityRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/mapper/AuthorityMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/impl/AuthenticateServiceImpl.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/UserRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/org/yood/springboot/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/org/yood/springboot/mybatis/repository/UserMapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/mapper/UserMapperTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/repository/UserRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/DataSourceConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/DataSourceConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/web/controller/UserControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/web/controller/UserControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/service/UserServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/service/UserServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebMvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebMvcConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebSecurityConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/web/MocoTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/exception/BusinessException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/exception/ExceptionBody.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/exception/GlobalExceptionHandlerControllerAdvice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/exception/UnAuthorizedException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/web/MocoTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/SpringBootMybatisApplication.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/SpringBootMybatisApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/DataSourceConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/DataSourceConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebMvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebMvcConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebSecurityConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/entity/Authority.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/entity/Authority.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/entity/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/AuthorityRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/AuthorityRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/UserRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/AuthenticateService.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/AuthenticateService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/UserService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/impl/UserServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/util/EncodingUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/util/EncodingUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/util/EncryptUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/util/EncryptUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/util/JSONUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/util/JSONUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/util/UUIDUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/util/UUIDUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/controller/LoginController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/controller/UserController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/filter/CORSFilter.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/filter/CORSFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/filter/CharacterEncodingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/filter/CharacterEncodingFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/interceptor/SessionInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/interceptor/SessionInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/util/RequestUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/util/RequestUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/org/yood/springboot/mybatis/repository/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/org/yood/springboot/jpa/repository/UserMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/BasicIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/BasicIntegrationTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/BasicMockMvcTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/BasicMockMvcTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/SpringBootMybatisApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/SpringBootMybatisApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/repository/UserRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/repository/UserRepositoryTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/service/UserServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/service/UserServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/util/EncryptUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/util/EncryptUtilsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/util/UUIDUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/util/UUIDUtilsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/web/controller/UserControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/web/controller/UserControllerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/web/util/RequestUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/web/util/RequestUtilsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-jpa.iml" afterPath="$PROJECT_DIR$/springboot-jpa.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-jpa.ipr" afterPath="$PROJECT_DIR$/springboot-jpa.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-jpa.iws" afterPath="$PROJECT_DIR$/springboot-jpa.iws" />
     </list>
     <ignored path="springboot-jpa.iws" />
@@ -117,7 +138,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="AuthorityRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/AuthorityRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/AuthorityRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -129,7 +150,7 @@
         </entry>
       </file>
       <file leaf-file-name="WebMvcConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebMvcConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebMvcConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
@@ -138,18 +159,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
@@ -159,10 +170,40 @@
         </entry>
       </file>
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9156355">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.14848144">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalExceptionHandlerControllerAdvice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/GlobalExceptionHandlerControllerAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BusinessException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/BusinessException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionBody.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/ExceptionBody.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -173,10 +214,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-              <folding>
-                <element signature="e#1537#1538#0" expanded="true" />
-                <element signature="e#1581#1582#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,42 +224,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-              <folding>
-                <element signature="e#6823#6824#0" expanded="true" />
-                <element signature="e#6894#6895#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/UserRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Authority.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/entity/Authority.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrudRepository.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.9.3.RELEASE/bd96510a2da777229c9739c5b3e622571634e01c/spring-data-commons-1.9.3.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -811,6 +826,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/AuthorityRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/exception/GlobalExceptionHandlerControllerAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/ExceptionBody.java" />
       </list>
     </option>
   </component>
@@ -833,7 +850,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
+    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1676" />
     <option name="height" value="1027" />
@@ -869,9 +886,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -934,7 +949,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -960,7 +975,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -990,7 +1005,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1024,7 +1039,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1054,7 +1069,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1106,7 +1121,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1132,7 +1147,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1162,7 +1177,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springboot-jpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-jpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1196,7 +1245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1226,7 +1275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1260,7 +1309,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1290,7 +1339,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1320,7 +1369,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mybatis" />
+              <option name="myItemId" value="jpa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1330,6 +1379,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1345,6 +1396,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/exception" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -1418,15 +1470,17 @@
       <option name="number" value="Default" />
       <updated>1443277440112</updated>
       <workItem from="1443277441264" duration="959000" />
-      <workItem from="1443431054339" duration="6759000" />
+      <workItem from="1443431054339" duration="8198000" />
+      <workItem from="1443580045011" duration="1361000" />
+      <workItem from="1443582890720" duration="93000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7718000" />
+    <option name="totallyTimeSpent" value="10611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
+    <frame x="1" y="23" width="1676" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1442,11 +1496,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.066625915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06601467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1475,7 +1529,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/AuthorityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1483,18 +1571,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/3.2.7.RELEASE/63a464c3de72944370b40271c80c48b39799dd20/spring-security-web-3.2.7.RELEASE-sources.jar!/org/springframework/security/web/header/writers/frameoptions/XFrameOptionsHeaderWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.120746434">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/SpringBootMybatisApplication.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/3.2.7.RELEASE/e922f94169382a4d6472e1e2f6266dc6c97471d7/spring-security-config-3.2.7.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/HeadersConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/entity/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.9.3.RELEASE/bd96510a2da777229c9739c5b3e622571634e01c/spring-data-commons-1.9.3.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/AuthorityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/3.2.7.RELEASE/63a464c3de72944370b40271c80c48b39799dd20/spring-security-web-3.2.7.RELEASE-sources.jar!/org/springframework/security/web/header/writers/frameoptions/XFrameOptionsHeaderWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/3.2.7.RELEASE/e922f94169382a4d6472e1e2f6266dc6c97471d7/spring-security-config-3.2.7.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/HeadersConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/entity/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.9.3.RELEASE/bd96510a2da777229c9739c5b3e622571634e01c/spring-data-commons-1.9.3.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1502,16 +1700,35 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/DataSourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.120746434">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/SpringBootMybatisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/DataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1519,34 +1736,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/web/controller/UserControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/web/controller/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/repository/UserRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/repository/UserRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1443432175000" expanded="true" signature="-1:-1" placeholder="@{...}" />
-            <marker date="1443432175000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1443432175000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1443432175000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1443432175000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/yood/springboot/mybatis/service/UserServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/yood/springboot/jpa/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
@@ -1554,23 +1761,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/web/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
@@ -1586,7 +1791,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/entity/Authority.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/entity/Authority.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -1594,7 +1799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
@@ -1604,7 +1809,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/repository/AuthorityRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/repository/AuthorityRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -1614,7 +1819,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebMvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
@@ -1626,10 +1831,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-          <folding>
-            <element signature="e#1537#1538#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1637,14 +1839,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
-          <folding>
-            <element signature="e#6823#6824#0" expanded="true" />
-            <element signature="e#6894#6895#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
@@ -1652,10 +1851,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/mybatis/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/GlobalExceptionHandlerControllerAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9156355">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/BusinessException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/web/exception/ExceptionBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/yood/springboot/jpa/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14848144">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
       </provider>
