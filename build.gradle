@@ -12,6 +12,7 @@ buildscript {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
         classpath 'io.spring.gradle:dependency-management-plugin:0.5.1.RELEASE'
         classpath 'org.flywaydb:flyway-gradle-plugin:3.2.1'
+        classpath 'org.ajoberstar:gradle-jacoco:0.2.0'
     }
 }
 
@@ -21,6 +22,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plubin: 'jacoco'
 apply plugin: 'org.flywaydb.flyway'
 
 sourceCompatibility = 1.8
@@ -66,7 +68,18 @@ flyway {
     password = ''
 }
 
-defaultTasks 'clean','test'
+jacocoTestReport {
+    doFirst {
+        classDirectories = fileTree(dir: "${buildDir}/classes/main/").exclude("org/yood/springboot/mybatis/entity/**")
+    }
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "${buildDir}/reports/coverage"
+    }
+}
+
+defaultTasks 'clean', 'test'
 
 jar {
     baseName = 'spring-boot-jpa'
@@ -77,3 +90,6 @@ task initDatabase(type: Exec) {
     commandLine './shell/init_db_root.sh'
 }
 
+test << {
+    jacocoTestReport.execute()
+}
